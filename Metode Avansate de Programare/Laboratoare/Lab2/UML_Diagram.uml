@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.company.Main</OriginalElement>
+  <nodes>
+    <node x="281.65519480519475" y="280.0">com.company.runner.TaskRunner</node>
+    <node x="1138.0441558441557" y="280.0">com.company.sort.BubbleSort</node>
+    <node x="0.0" y="200.0">com.company.model.MessageTask</node>
+    <node x="1347.5833333333333" y="470.0">com.company.model.SortingTask</node>
+    <node x="1293.2551948051946" y="390.0">com.company.sort.SorterFactory</node>
+    <node x="727.9051948051947" y="390.0">com.company.factory.TaskContainerFactory</node>
+    <node x="668.5833333333333" y="590.0">com.company.model.TestRun</node>
+    <node x="817.2963203463203" y="120.0">com.company.containter.Container</node>
+    <node x="215.1551948051947" y="120.0">com.company.utils.Constanta</node>
+    <node x="559.8333333333333" y="200.0">com.company.containter.AbstractContainer</node>
+    <node x="881.0051948051947" y="470.0">com.company.runner.StrategyTaskRunner</node>
+    <node x="1473.4681818181818" y="280.0">com.company.utils.SortingStrategy</node>
+    <node x="889.6181818181817" y="200.0">com.company.utils.ContainerStrategy</node>
+    <node x="606.201515151515" y="0.0">com.company.model.Task</node>
+    <node x="1286.0441558441557" y="280.0">com.company.sort.QuickSort</node>
+    <node x="1302.0051948051946" y="200.0">com.company.sort.AbstractSorter</node>
+    <node x="848.6181818181817" y="280.0">com.company.factory.Factory</node>
+    <node x="121.50735930735914" y="470.0">com.company.runner.DelayTaskRunner</node>
+    <node x="309.50735930735914" y="470.0">com.company.runner.PrinterTaskRunner</node>
+    <node x="481.701515151515" y="280.0">com.company.containter.QueueContainer</node>
+    <node x="207.50735930735914" y="390.0">com.company.runner.AbstractTaskRunner</node>
+    <node x="661.701515151515" y="280.0">com.company.containter.StackContainer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.model.MessageTask" target="com.company.model.Task">
+      <point x="0.0" y="-15.0" />
+      <point x="68.0" y="180.0" />
+      <point x="53.340692640692396" y="180.0" />
+      <point x="53.340692640692396" y="60.0" />
+      <point x="616.201515151515" y="60.0" />
+      <point x="-30.0" y="15.0" />
+    </edge>
+    <edge source="com.company.runner.AbstractTaskRunner" target="com.company.runner.TaskRunner">
+      <point x="72.0" y="-15.0" />
+      <point x="375.50735930735914" y="370.0" />
+      <point x="356.3218614718614" y="370.0" />
+      <point x="10.666666666666629" y="15.0" />
+    </edge>
+    <edge source="com.company.sort.BubbleSort" target="com.company.sort.AbstractSorter">
+      <point x="0.0" y="-15.0" />
+      <point x="1202.0441558441557" y="255.0" />
+      <point x="1322.0051948051946" y="255.0" />
+      <point x="-60.0" y="15.0" />
+    </edge>
+    <edge source="com.company.containter.StackContainer" target="com.company.containter.AbstractContainer">
+      <point x="0.0" y="-15.0" />
+      <point x="741.701515151515" y="255.0" />
+      <point x="720.8333333333333" y="255.0" />
+      <point x="69.0" y="15.0" />
+    </edge>
+    <edge source="com.company.runner.DelayTaskRunner" target="com.company.runner.AbstractTaskRunner">
+      <point x="63.0" y="-15.0" />
+      <point x="268.50735930735914" y="450.0" />
+      <point x="279.50735930735914" y="450.0" />
+      <point x="-24.0" y="15.0" />
+    </edge>
+    <edge source="com.company.sort.QuickSort" target="com.company.sort.AbstractSorter">
+      <point x="0.0" y="-15.0" />
+      <point x="1346.0441558441557" y="255.0" />
+      <point x="1362.0051948051946" y="255.0" />
+      <point x="-20.0" y="15.0" />
+    </edge>
+    <edge source="com.company.containter.QueueContainer" target="com.company.containter.AbstractContainer">
+      <point x="53.33333333333337" y="-15.0" />
+      <point x="615.0348484848485" y="255.0" />
+      <point x="628.8333333333333" y="255.0" />
+      <point x="-23.0" y="15.0" />
+    </edge>
+    <edge source="com.company.runner.StrategyTaskRunner" target="com.company.runner.TaskRunner">
+      <point x="-76.80000000000007" y="-15.0" />
+      <point x="900.2051948051947" y="450.0" />
+      <point x="623.107359307359" y="450.0" />
+      <point x="623.107359307359" y="350.0" />
+      <point x="398.98852813852807" y="350.0" />
+      <point x="53.333333333333314" y="15.0" />
+    </edge>
+    <edge source="com.company.model.SortingTask" target="com.company.model.Task">
+      <point x="-51.0" y="-15.0" />
+      <point x="1364.5833333333333" y="450.0" />
+      <point x="1127.5441558441557" y="450.0" />
+      <point x="1127.5441558441557" y="50.0" />
+      <point x="682.8681818181817" y="50.0" />
+      <point x="36.66666666666674" y="15.0" />
+    </edge>
+    <edge source="com.company.runner.PrinterTaskRunner" target="com.company.runner.AbstractTaskRunner">
+      <point x="-69.0" y="-15.0" />
+      <point x="332.50735930735914" y="450.0" />
+      <point x="327.50735930735914" y="450.0" />
+      <point x="24.0" y="15.0" />
+    </edge>
+    <edge source="com.company.factory.TaskContainerFactory" target="com.company.factory.Factory">
+      <point x="41.59999999999991" y="-15.0" />
+      <point x="873.5051948051946" y="370.0" />
+      <point x="900.6181818181817" y="370.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.company.containter.AbstractContainer" target="com.company.containter.Container">
+      <point x="73.60000000000002" y="-15.0" />
+      <point x="725.4333333333333" y="180.0" />
+      <point x="832.2963203463203" y="180.0" />
+      <point x="-45.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7521058965102286" x="821.0" y="310.0" />
+  <SelectedNodes>
+    <node>com.company.runner.TaskRunner</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
