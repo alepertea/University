@@ -1,0 +1,2 @@
+﻿1;1;San Antonio Spurs;2;Detroit Pistons;15/3/2020
+2;1;San Antonio Spurs;3;Denver Nuggets;19/12/2019

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+
+<GridPane alignment="center" hgap="10" styleClass="root" stylesheets="/style/authentication.css" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="socialnetwork.controller.SignupController">
+    <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+
+    <Text id="loginLabel" text="Sign up" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+
+    <Label text="First name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+    <TextField fx:id="firstNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label text="Last name:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+    <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+
+    <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+
+    <PasswordField fx:id="passwordField1" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <Label text="Confirm password:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+
+    <PasswordField fx:id="passwordField2" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+    <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="6">
+        <Button id="signInButton" onAction="#handleSubmitButtonAction" text="Sign Up" />
+    </HBox>
+
+</GridPane>

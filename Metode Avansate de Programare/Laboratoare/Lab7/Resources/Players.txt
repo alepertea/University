@@ -1,0 +1,45 @@
+﻿1;Tania Varduca;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+2;Pop Teodor;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+3;Maris Paula;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+4;Gutanu Carina;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+5;Sur Alexandra;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+6;Marian Alexandru;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+7;Burca David;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+8;Popescu Emanuel;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+9;Mihut Andreea;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+10;Rus Dan;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+11;Miruna Petru;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+12;Floriana Daniela;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+13;Ruxandra Matei;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+14;Nicusor Filip;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+15;Toma Nicolae;Liceul Teoretic Nicolae Balcescu;1;San Antonio Spurs
+16;Elisabeta Antonia;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+17;Dionisie Laura;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+18;Ana Daciana;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+19;Grigore Aurelia;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+20;Cornel Magda;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+21;Gavril Tiberiu;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+22;Virgiliu Maria;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+23;Elena Demetra;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+24;Maria Codrut;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+25;Florentin Viorica;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+26;Rares Carmen;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+27;Dan Simon;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+28;Silviu Brandusa;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+29;Mihai Emanuel;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+30;Elena Margareta;Scoala Gimnaziala Liviu Rebreanu;2;Detroit Pistons
+31;Victoria Costica;Scoala Nicolae Titulescu;3;Denver Nuggets
+32;Eusebiu Sara;Scoala Nicolae Titulescu;3;Denver Nuggets
+33;Lenuta Ruxandra;Scoala Nicolae Titulescu;3;Denver Nuggets
+34;Petru Loredana;Scoala Nicolae Titulescu;3;Denver Nuggets
+35;Alexandru Beniamin;Scoala Nicolae Titulescu;3;Denver Nuggets
+36;Pop Radu;Scoala Nicolae Titulescu;3;Denver Nuggets
+37;Silviu Luca;Scoala Nicolae Titulescu;3;Denver Nuggets
+38;Miruna Magdalena;Scoala Nicolae Titulescu;3;Denver Nuggets
+39;Tudor Alexandra;Scoala Nicolae Titulescu;3;Denver Nuggets
+40;Cocan Isabela;Scoala Nicolae Titulescu;3;Denver Nuggets
+41;Ciprian Corneliu;Scoala Nicolae Titulescu;3;Denver Nuggets
+42;Chis Bogdana;Scoala Nicolae Titulescu;3;Denver Nuggets
+43;Font Dragos;Scoala Nicolae Titulescu;3;Denver Nuggets
+44;Bele Dan;Scoala Nicolae Titulescu;3;Denver Nuggets
+45;Moldovan Andreea;Scoala Nicolae Titulescu;3;Denver Nuggets
