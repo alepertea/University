@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" styleClass="root" stylesheets="/style/style.css" vgap="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="socialnetwork.controller.FriendRequestsController">
+
+    <Label alignment="CENTER" id="labelForTable" text="Friend requests sent" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Label alignment="CENTER" id="labelForTable" text="Friend requests received" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <TableView fx:id="requestsSentTable" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="toColumnSent" text="To"/>
+            <TableColumn fx:id="statusColumnSent" text="Status"/>
+            <TableColumn fx:id="dateColumnSent" text="Date"/>
+        </columns>
+    </TableView>
+
+    <TableView fx:id="requestsReceivedTable" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="fromColumnReceived" text="From"/>
+            <TableColumn fx:id="statusColumnReceived" text="Status"/>
+            <TableColumn fx:id="dateColumnReceived" text="Date"/>
+        </columns>
+    </TableView>
+
+    <Label fx:id="messageToUserForRequest" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="3" spacing="10">
+        <Button fx:id="buttonAccept" text="Accept" onAction="#handleAcceptFriendRequest"/>
+        <Button fx:id="buttonReject" text="Reject" onAction="#handleRejectFriendRequest"/>
+        <Button fx:id="buttonRemove" onAction="#handleRemove" text="Remove" />
+    </HBox>
+</GridPane>

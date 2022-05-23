@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="top_left" hgap="10" styleClass="root" stylesheets="/style/style.css" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.HomeController">
+
+    <Label fx:id="welcomeMessage" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+    <HBox  spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <Button fx:id="buttonSendFriendRequest" onAction="#handleSendFriendRequest" text="Send request" />
+        <Button fx:id="buttonRemoveFriend" onAction="#handleRemoveFriend" text="Delete friend" />
+        <Button fx:id="buttonRequests" onAction="#handleRequests" text="Show all requests" />
+        <Button fx:id="buttonRefresh" onAction="#handleRefresh" text="Refresh" />
+    </HBox>
+
+    <TableView fx:id="friendsTable" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="friendColumnFirstName" text="First Name"/>
+            <TableColumn fx:id="friendColumnLastName" text="Last Name"/>
+        </columns>
+    </TableView>
+
+    <TableView fx:id="usersTable" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="userColumnFirstName" text="First Name" />
+            <TableColumn fx:id="userColumnLastName" text="Last Name" />
+        </columns>
+    </TableView>
+
+    <Label fx:id="messageToUser" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+    <HBox spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <Button fx:id="buttonMessage" onAction="#handleMessage" text="Messages" />
+    </HBox>
+
+</GridPane>

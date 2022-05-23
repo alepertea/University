@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" styleClass="root" stylesheets="/style/style.css" vgap="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="socialnetwork.controller.MessageController">
+
+    <Label alignment="CENTER" id="labelForTable" text="Friends" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+    <TableView fx:id="friendsTable" GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="friendColumnFirstName" text="First Name"/>
+            <TableColumn fx:id="friendColumnLastName" text="Last Name"/>
+        </columns>
+    </TableView>
+
+    <TableView fx:id="groupchatTable" GridPane.columnIndex="0" GridPane.rowIndex="3">
+        <columns>
+            <TableColumn fx:id="friendListColumn" text="Friends"/>
+        </columns>
+    </TableView>
+
+    <ListView fx:id="messageList" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <ListView fx:id="groupchatList" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <TextField fx:id="messageField" GridPane.columnIndex="1" GridPane.rowIndex="2" alignment="CENTER"/>
+    <TextField fx:id="groupMessageField" GridPane.columnIndex="1" GridPane.rowIndex="4" alignment="CENTER"/>
+    <Label fx:id="errorMessage" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Button GridPane.columnIndex="2" GridPane.rowIndex="2" text="Send to all" onAction="#handleSendToAll"> </Button>
+</GridPane>
+
