@@ -1,0 +1,24 @@
+import java.lang.reflect.Field;
+import java.lang.Class;
+
+public class Masina {
+    protected int roti = 4;
+}
+class MasinaElectrica extends Masina{
+    private String propulsie;
+    public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
+        MasinaElectrica masinaElectrica = new MasinaElectrica();
+        Class object = masinaElectrica.getClass();
+        Field field = object.getField("propulsie");
+        field.setAccessible(true);
+        field.set(masinaElectrica, "electrica");
+        System.out.print(masinaElectrica.roti);
+        System.out.print(masinaElectrica.propulsie);
+    }
+}
+
+// a) NoSuchFieldException
+// b) IllegalAccessException
+// c) 4
+// d) 4electrica
+// Raspuns corect: a) NoSuchFieldException, deoarece metoda getField() stie sa acceseze doar atributele publice ale clasei, nu si cele private
