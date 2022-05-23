@@ -1,0 +1,21 @@
+Hozai Andreea - Grupa 224, email:hozaiandreea@yahoo.com
+
+Care este rezultatul executiei urmatorului cod?
+
+ static void Main(string[] args)
+        {
+            string pattern = @"^[a][a-z]{2,8}";
+            Regex rgx = new Regex(pattern);
+            List<string> list = new List<string>() { "ana", "Popescu", "aprogramatoarei", "Maria", "Bogdan", "Andrei", "Ioana", "amalia", "Bianca", "Melania" };
+            list.Where(x => rgx.IsMatch(x))
+                .OrderByDescending(x => x)
+                .Take(2)
+                .ToList()
+                .ForEach(Console.WriteLine);
+        }
+Raspunsuri:
+	 a.aprogramatoarei ana
+         b.aprogramatoarei Andrei
+         c.amalia ana Andrei aprogramatoarei
+         d.amalia ana
+Raspuns corect: a.aprogramatoarei ana

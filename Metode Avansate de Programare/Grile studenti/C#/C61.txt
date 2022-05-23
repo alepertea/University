@@ -1,0 +1,84 @@
+Student propunator: Franciuc Alexandru-Dimitrie		Grupa:223		Email: franciuc.alexandru10@gmail.com
+
+Cerinta:
+Ce se afișează la rularea codului urmator? 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Grila_Map
+{
+	class Fructe
+	{
+		public string Nume;
+		public string Culoare;
+		private float Pret;
+
+		public Fructe(string nume, string culoare, string pret)
+		{
+			Nume = nume;
+			Culoare = culoare;
+			Pret = float.Parse(pret);
+		}
+
+		public float Reducere()
+		{
+			return Pret / 2;
+		}
+
+		public override string ToString()
+		{
+			return Nume + "-" + Pret + "/kg ";
+		}
+	}
+
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			List<Fructe> fructe = new List<Fructe>();
+			fructe.Add(new Fructe("mere", "verzi", "5"));
+			fructe.Add(new Fructe("banane", "galbene", "23"));
+
+			try
+			{
+				fructe.Add(new Fructe("prune", "mov", "7"));
+				fructe.Add(new Fructe("pere", "verzi", "20"));
+				fructe.Add(new Fructe("gutui", "galbene", "1o"));
+				fructe.Add(new Fructe("portocale", "portocalii", "13"));
+			}
+			catch (FormatException ex)
+			{
+				Console.Write("A");
+			}
+			finally
+			{
+				Console.Write("X");
+			}
+
+			List<Fructe> fructeReduse = fructe.ToList().Where(f => f.Reducere() > 2 && f.Reducere() < 9).ToList<Fructe>();
+			fructeReduse.ForEach(x => Console.Write(x.ToString()));
+		}
+	}
+}
+
+Variante de raspuns:
+a) Xmere-5/kg prune-7/kg
+b) AXmere-5/kg prune-7/kg
+c) AX
+d) Xmere-5/kg prune-7/kg gutui/10kg portocale-13/kg
+e) Amere-5/kg prune-7/kg portocale-13/kg
+
+
+Raspuns corect:
+	b) Amere-5/kg prune-7/kg
+	
+Explicatie:
+	Se adauga in lista de fructe, mere si banane, apoi se incearca sa se adauge prune, pere, gutui si portocale, dar cand incercam sa adaugam gutui programul aruna o exceptie deoarece nu poate converti 1o intr-un float si se afiseaza "A", asa ca nu se vor adauga gutui si portocale. Apoi in lista de fructeReduse se cauta fructele ce au pretul redus intre 2 si 9. Apoi se afiseaza fructele.
+	
+Concepte:
+	Try-catch
+	LINQ
+	
+Dificultate: Easy

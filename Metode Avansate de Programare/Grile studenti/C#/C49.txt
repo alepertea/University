@@ -1,0 +1,40 @@
+using System;
+
+Ce se intampla daca rulam codul asta?
+
+public class Song
+{
+    private string name;
+    public Song Next { get; set; }
+ 
+    public Song(string name)
+    {
+        this.name = name;
+    }
+    
+    public bool f()
+    {       
+        if(X.NextSong == Y)
+            if(Y.NextSong == X)
+                return true;
+        Console.WriteLine("Da");
+        throw new InvalidOperationException("...");
+    }
+    
+    public static void Main(string[] args)
+    {
+        Song X = new Song("Minim 2 - Alex Velea");
+        Song Y = new Song("Va fi bine - Andra");
+    
+        X.Next = Y;
+        Y.Next = X;
+    
+        Console.WriteLine(X.f());
+    }
+}
+
+A . eroare pe linia cu if(X.NextSong == Y)
+B . eroare pe liniile cu if(X.NextSong == Y) si if(Y.NextSong==X)  - corect
+C . eroare pe linia cu if(Y.NextSong == X)
+D . true
+E . arunca exceptie

@@ -1,0 +1,40 @@
+Grila C#
+Ciubancan Giorgiana Carina
+grupa 222
+
+Ce se va afisa la rularea urmatrului cod?
+
+using System;
+namespace ConsoleApplication1
+{
+	class A
+	{
+    	protected A() {}
+    	public override string ToString() { return "A"; }
+	}
+	class B : A
+	{
+    	public B() : base(){}
+    	public override string ToString() { return "B"; }
+	}
+	class  Program
+	{
+	
+    	static void Main(string[] args)
+    	{
+        	A a = new A();
+        	B b = new B();
+        	Console.WriteLine(a);
+        	Console.WriteLine(b);
+        	
+    	}
+	}
+}
+
+A)	“A”
+B)	“B”
+C)	“A” “B”
+D)	Eroare
+
+
+Va apărea o eroare deoarece accesul la constructorul clasei A este Protected nu Public,iar la inițializare constructorul nu va putea fi apelat.
