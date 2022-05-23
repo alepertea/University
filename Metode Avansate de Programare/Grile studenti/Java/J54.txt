@@ -1,0 +1,24 @@
+Ce afiseaza la rulare urmatorul program?
+
+public class Main
+{
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<Integer>();
+        for (int i = 1; i < 10; i++) {
+            list.add(i);
+        }
+
+        Stream<Integer> stream = list.parallelStream();
+
+        list.parallelStream().forEach(x-> System.out.println(x));
+        Predicate<Integer> p1 = x -> x % 2 == 0;
+
+        Integer[] NumbersArr = stream.filter(p1).toArray(Integer[]::new);
+        Arrays.stream(NumbersArr).forEach(x-> System.out.print(x));
+    }
+}
+
+a) 2468
+b) orice permutare a multimii de cifre {2,4,6,8}
+c) eroare de compilare
+d) NullPointerException

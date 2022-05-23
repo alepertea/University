@@ -1,0 +1,68 @@
+/////////////////////////////////////////////////////////////////////////////////////
+public class Outer {
+		public String a = "Hello";
+		public class InnerClass1{
+			private String  b = "All";
+			public String show(){
+				return Outer.this.a+" "+b;
+
+ 				}	
+		}
+		public static class InnerClass2{
+			private String  c = "World";
+			public String show(){
+				return Outer.this.a+" "+c;
+
+		}
+}
+
+class Program{
+	public static void main(String[] args){
+		Outer out=new Outer();
+		Outer.InnerClass1 inner1=out.new InnerClass1();
+		System.out.println(inner1.show());
+		Outer.InnerClass2 inner2=new Outer.InnerClass2();
+		 System.out.println( inner2.show());
+ 		}
+	}
+}
+///////////////////////////////////////////////////////////////////////////////////////
+Ce se va afisa cand codul de mai sus va fi rulat?
+
+a) Hello All 
+   Hello World
+
+b) Hello
+   Hello
+
+c) Eroare 
+
+d)  Hello World 
+   Hello All
+////////////////////////////////////////////////////////////////////////////////////////
+
+Explicatie: clasa interna innerClass2 este statica, deci poate accesa doar membrii statici ai clasei Outer, iar cand incearca sa acceseze variablia a, aceasta nu va avea acces si va fi o eroare.
+Raspuns corect: Eroare 
+///////////////////////////////////////////////////////////////////////////////////////
+package com.company;
+
+public class Outer {
+     static String a = "Hello";
+
+    public class InnerClass1 {
+        private String b = "All";
+        public String show() {
+            return Outer.this.a + " " + b;
+
+        }
+    }
+
+    public static class InnerClass2 {
+        private String c = "World";
+        public String show() {
+            return Outer.a + " " + c;
+
+        }
+    }
+}
+

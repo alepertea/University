@@ -1,0 +1,24 @@
+Hozai Andreea - Grupa 224, email:hozaiandreea@yahoo.com
+
+Care este rezultatul executiei codului?
+
+public static void main(String[] args) {
+        Predicate<String> pred1=x->x.matches("^[a][a-z]{2,8}");
+        Stream.of("ana","Popescu","aprogramatoarei","Maria","Bogdan","Andrei","Ioana","amalia","Bianca","Melania")
+                .filter(pred1)
+                .map(s -> {
+                    System.out.println(s+" ");
+                    return s.toUpperCase();
+                })
+                .sorted((s1, s2) -> {
+                    return s1.compareTo(s2);})
+                .forEach(s -> System.out.println(s));
+        
+    }
+
+Raspunsuri
+        a.ana aprogramatoarei Andrei amalia AMALIA ANA ANDREI APROGRAMATOAREI
+        b.ana aprogramatoarei amalia AMALIA ANA APROGRAMATOAREI
+        c.ana amalia AMALIA ANA
+        d.ana Andrei amalia AMALIA ANA
+Raspuns corect: c.ana amalia AMALIA ANA
