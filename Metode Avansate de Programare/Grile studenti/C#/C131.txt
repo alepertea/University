@@ -1,0 +1,32 @@
+Ce face urmatorul program?
+
+
+using System;
+using System.Linq;
+
+
+namespace grilac
+{
+    class Program
+    {
+       
+        static public void Main()
+        {
+
+            List<string> my_list = new List<string>() {
+                "os","frumos","rece","cald","spectaculos","verde","cer"
+        };
+
+            var res = my_list.Where(a => a.Contains("os"));
+            foreach (var q in res)
+            {
+                Console.WriteLine(q);
+            }
+        }
+    }
+}
+
+a) Nu afiseaza nimic
+b)Afiseaza: os  frumos spectaculos (fiecare pe cate o linie)
+c)Are eroare de compilare
+d)Alt raspuns

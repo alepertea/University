@@ -1,0 +1,34 @@
+using System;
+class Division
+{
+    uint result = 0;
+    public void divide2numbers(uint numerator, uint denominator)
+    {
+        try
+        {
+            result = numerator / denominator;
+        }
+        catch (DivideByZeroException)
+        {
+            Console.WriteLine("DivideByZeroException");
+        }
+        catch (FormatException) {
+            Console.WriteLine("FormatException");
+        }
+        finally
+        {
+            Console.WriteLine(result);
+        }
+    }
+    static void Main(string[] args)
+    {
+        Division div = new Division();
+        div.divide2numbers(2021, 3-2);
+    }
+}
+//Ce se afiseaza la rularea urmatorului cod?
+//a)DivideByZeroException
+//b)2021
+//c)FormatException
+//d)0
+//Raspuns corect: b) 2021, deoarece 3-2 este o expresie pozitiva si nu afecteaza cu nimic rularea codului, exceptiile fiind evitate

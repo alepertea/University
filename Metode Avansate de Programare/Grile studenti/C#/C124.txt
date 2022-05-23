@@ -1,0 +1,74 @@
+Student propunator: Spataru Andra Madalina		Grupa:223		Email: madalina.spataru14@gmail.com
+
+Cerinta: Ce se afișează la rularea codului urmator? 
+
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+
+namespace Grila_Map
+{
+	class Animal : IComparable<Animal>
+	{
+		public string Name;
+		public string Specie { get; private set; }
+		public int Varsta;
+
+		public Animal(string name, string spcie, int varsta)
+		{
+			Name = name;
+			Specie = spcie;
+			Varsta = varsta;
+		}
+
+		public int CompareTo([AllowNull] Animal other)
+		{
+			return this.Name.CompareTo(other.Name);		//24
+		}
+	}
+
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			var animale = new List<Animal>();
+
+			var a1 = new Animal("A", "Caine", 10);
+			var a2 = new Animal("B", "Pisica", 6);
+			var a3 = new Animal("C", "Papagal", 2);
+			var a4 = new Animal("D", "Caine", 3);
+			var a5 = new Animal("A", "pisica", 5);
+			a1.Name = "F";	//39
+			a2.Specie = "Dihor";	//40
+			a2.Varsta = 7;	//41
+			a4.Name = "G";	//42
+			animale.Add(a1);	//43
+			animale.Add(a2);	//44
+			animale.Add(a3);	//45
+			animale.Add(a4);	//46
+			animale.Add(a5);	//47
+
+			Console.Write(a1.CompareTo(a1) + " ");	//49
+			Console.Write(a1.CompareTo(a5) + " ");	//50
+			
+			animale.ForEach(x => x.Varsta += 1);	//52
+			animale.Where(x => x.Varsta >= 4 && x.Varsta < 11).ToList().ForEach(x => Console.Write(x.Name + " "));	//53
+		}	
+	}	
+}
+
+Variante de raspuns:
+a) 0 1 B G E
+b) eroare de executie la linia 49
+c) eroare de compilare la linia 40
+d) 0 1 F B E
+e) eroare de executie la linia 40
+
+Raspuns corect: c) eroare de compilare la linia 40
+	
+Explicatie: Avem o clasa Animal ce implementeaza interfata IComparable, in functia Main construim 5 Animale, modificam numele si varsta unor animale, iar cand dorim sa modificam specia unui animal programul ne semnaleaza o eroare la compilare deoarece nu putem se modificam o variabila ce e private set;.
+	
+Concepte: LINQ, IComparable Interface, Encapsulation
+	
+Dificultate: Easy
