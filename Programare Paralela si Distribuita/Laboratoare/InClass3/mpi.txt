@@ -1,0 +1,7 @@
+Properties:
+- C/C++ -> Additional Include Directories:
+		$(MSMPI_INC)
+		$(MSMPI_INC)\x86
+- Linker:
+	- General -> Additional Library Directories: $(MSMPI_LIB32)
+	- Input -> Additional Dependencies: msmpi.lib
