@@ -1,0 +1,124 @@
+#menu {
+	display: table;
+	/* float: left; */
+}
+
+#menu li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	top: 0;
+	display: table-cell;
+	height: 83px;
+}
+
+#img1 {
+	left: 0px;
+	width: 83px;
+	background: url('icons.png') 0 -84px;
+}
+
+#img1:hover{
+	background: url('icons.png') 0 0px;
+}
+
+#img2 {
+	left: 83px;
+	width: 83px;
+	background: url('icons.png') -84px -84px;
+}
+
+#img2:hover {
+	background: url('icons.png') -84px 0px;
+}
+
+#img3 {
+	left: 169px;
+	width: 83px;
+	background: url('icons.png') -169px -84px;
+}
+
+#img3:hover {
+	background: url('icons.png') -169px 0px;
+}
+
+
+#img4 {
+	left: 252px;
+	width: 83px;
+	background: url('icons.png') -252px -84px;
+}
+
+#img4:hover {
+	background: url('icons.png') -252px 0px;
+}
+
+#img5 {
+	left: 335px;
+	width: 83px;
+	background: url('icons.png') -336px -84px;
+}
+
+#img5:hover {
+	background: url('icons.png') -336px 0px;
+}
+
+#img6 {
+	left: 418px;
+	width: 83px;
+	background: url('icons.png') -420px -84px;
+}
+
+#img6:hover {
+	background: url('icons.png') -420px 0px;
+}
+
+#img7 {
+	left: 501px;
+	width: 83px;
+	background: url('icons.png') -504px -84px;
+}
+
+#img7:hover {
+	background: url('icons.png') -504px 0px;
+}
+
+#img8 {
+	left: 584px;
+	width: 83px;
+	background: url('icons.png') -588px -84px;
+}
+
+#img8:hover {
+	background: url('icons.png') -588px 0px;
+}
+
+#img9 {
+	left: 667px;
+	width: 83px;
+	background: url('icons.png') -670px -84px;
+}
+
+#img9:hover {
+	background: url('icons.png') -670px 0px;
+}
+
+#img10 {
+	left: 750px;
+	width: 83px;
+	background: url('icons.png') -756px -84px;
+}
+
+#img10:hover {
+	background: url('icons.png') -756px 0px;
+}
+
+#img11 {
+	left: 833px;
+	width: 83px;
+	background: url('icons.png') -840px -84px;
+}
+
+#img11:hover {
+	background: url('icons.png') -840px 0px;
+}

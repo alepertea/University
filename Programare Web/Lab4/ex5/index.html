@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "style.css" type = "text/css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src = "script.js" type = "text/javascript"></script>
+		<title> Slideshow </title>
+	</head>
+	<body>
+		<div class = "slideshow-container">
+			<div class = "slide">
+				<img src="images/1.jpg" style = "width:100%">
+				<div class = "text">First Image</div>
+			</div>
+
+			<div class = "slide">
+				<img src="images/2.jpg" style = "width:100%">
+				<div class = "text">Second Image</div>
+			</div>
+
+			<div class = "slide">
+				<img src = "images/3.jpg" style = "width:100%">
+				<div class = "text">Third Image</div>
+			</div>
+
+			<a class = "prev" onclick = "changeSlide(-1)"> &#10094; </a>
+			<a class = "next" onclick = "changeSlide(1)"> &#10095; </a>
+		</div>
+	</body>
+</html>

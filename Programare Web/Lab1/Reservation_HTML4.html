@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title> Rezervare </title>
+	<link rel = "icon" href = "images/icon.png" type = "image/x-icon">
+</head>
+
+<body>
+
+	<h1> Rezervă o cameră </h1>
+	
+	<table border = "1">
+		
+		<tr>
+			<th colspan = "3" bgcolor = "#959595"> <center> DETALII CAMERE </center> </th>
+		</tr>
+		
+		<tr>
+			<td align = "left" valign = "middle" bgcolor = "#c6c6c6">
+				<p> <strong> Camere disponibile <br> Facilități </strong> </p>
+			</td>
+			<td colspan = "2">
+				<table>
+					<tr>
+						<td>
+							<ol type = "A">
+								<li> <b> Standard </b>
+									<ul type = "circle">
+										<li> baie cu cadă </li>
+										<li> halat de baie </li>
+										<li> papuci de casă </li>
+										<li> televizor prin cablu/satelit </li>
+									</ul>
+								</li>
+								<li> <b> Superioară </b>
+									<ul type = "disc">
+										<li> baie cu cadă </li>
+										<li> halat de baie </li>
+										<li> papuci de casă </li>
+										<li> uscător de păr </li>
+										<li> televizor prin cablu/satelit </li>
+									</ul>
+								</li>
+								<li> <b> Deluxe </b>
+									<ul type = "square">
+										<li> baie cu cadă </li>
+										<li> jacuzzi </li>
+										<li> halat de baie </li>
+										<li> papuci de casă </li>
+										<li> uscător de păr </li>
+										<li> televizor prin cablu/satelit </li>
+									</ul>
+								</li>
+							</ol>
+						</td>
+						<td>
+							<img src = "images/standard.jpg" title = "Camera standard" alt = "Camera standard" width = "200" height = "100"> <br> <br>
+							<img src = "images/superioara.jpg" title = "Camera superioară" alt = "Camera superioară" width = "200" height = "100"> <br> <br>
+							<img src = "images/deluxe.jpg" title = "Camera deluxe" alt = "Camera deluxe" width = "200" height = "100">
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan = "3" bgcolor = "#959595"> <center> INFORMAȚII PERSONALE </center> </th>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for = "nume"> *Nume: </label>
+				<input type = "text" id = "nume" name = "nume">
+			</td>
+			<td>
+				<label for = "prenume"> *Prenume: </label>
+				<input type = "text" id = "prenume" name = "prenume" size = "15">
+			</td>
+			<td>
+				<label> Gen: </label>
+				<input type = "radio" id = "masculin" name = "gen" value = "M">
+				<label for = "masculin"> M </label>
+				<input type = "radio" id = "feminin" name = "gen" value = "F">
+				<label for = "feminin"> F </label>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label> *Carte de identitate: </label>
+				<input type = "radio" id = "carte" name = "act" value = "C.I.">
+				<label for = "carte"> C.I. </label>
+				<input type = "radio" id = "buletin" name = "act" value = "B.I." checked>
+				<label for = "buletin"> B.I. </label>
+			</td>
+			<td>
+				<label for = "serie"> *Seria: </label>
+				<input type = "text" id = "serie" name = "serie" size = "2" maxlength = 2>
+			</td>
+			<td>
+				<label for = "numar"> *Numărul: </label>
+				<input type = "text" id = "numar" name = "numar" size = "8" maxlength = 6>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for = "CNP"> *CNP: </label>
+				<input type = "text" id = "CNP" name = "CNP" maxlength = 13>
+			</td>
+			<td>
+				<label for = "telefon"> *Tel: </label>
+				<input type = "text" id = "telefon" name = "telefon" maxlength = 10>
+			</td>
+			<td>
+				<label for = "email"> Email: </label>
+				<input type = "text" id = "email" name = "email">
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan = "3" bgcolor = "#959595"> <center> REZERVĂ CAMERA + FACILITĂȚI EXTRA </center> </th>
+		</tr>
+		
+		<tr>
+			<td align = "left" valign = "middle" bgcolor = "#c6c6c6" rowspan = "2">
+				<p> <b> Detalii cameră <br> Detalii rezervare </b> </p>
+			</td>
+			<td colspan = "2">
+				<label for = "camera"> Alege o cameră: </label> <br>
+					<select name = "camera" id = "camera" multiple>
+						<option value = "Standard"> Standard </option>
+						<option value = "Superioară"> Superioară </option>
+						<option value = "Deluxe" selected> Deluxe </option>
+					</select>
+				<br>
+				<label> Parcare: </label>
+				<input type = "radio" id = "daParcare" name = "parcare" value = "Da">
+				<label for = "daParcare"> Da </label>
+				<input type = "radio" id = "nuParcare" name = "parcare" value = "Nu">
+				<label for = "nuParcare"> Nu </label>
+				<br>
+				<label> Animal(e): </label>
+				<input type = "radio" id = "daAnimal" name = "animal" value = "Da">
+				<label for = "daAnimal"> Da </label>
+				<input type = "radio" id = "nuAnimal" name = "animal" value = "Nu">
+				<label for = "nuAnimal"> Nu </label>
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan = "2">
+				<table>
+					<tr>
+						<td>
+							<label for = "dataSosirii"> Data sosirii: </label>
+							<input type = "text" id = "dataSosirii" name = "dataSosirii">
+						</td>
+						<td>
+							<label for = "dataPlecarii"> Data plecării: </label>
+							<input type = "text" id = "dataPlecarii" name = "dataPlecarii">
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		
+		<tr>
+			<td align = "left" valign = "middle" bgcolor = "#c6c6c6">
+				<p> <b> Facilități extra </b> </p>
+			</td>
+			<td colspan = "2">
+				<input type = "checkbox" id = "f1" name = "f1" value = "Prânz">
+				<label for = "f1"> Prânz </label>
+				<input type = "checkbox" id = "f2" name = "f2" value = "Cină">
+				<label for = "f2"> Cină </label> 
+				<input type = "checkbox" id = "f3" name = "f3" value = "Șampanie">
+				<label for = "f3"> Șampanie în cameră </label>
+				<input type = "checkbox" id = "f4" name = "f4" value = "Ghid">
+				<label for = "f4"> Ghid turistic </label>
+				<input type = "checkbox" id = "f5" name = "f5" value = "Prosoape">
+				<label for = "f5"> Prosoape extra </label>
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan = 3>
+				<p> Observații/cereri pentru staff: </p>
+				<textarea rows = "4" cols = "100"></textarea>
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan = "3">
+				<fieldset>
+					<legend> Note: </legend>
+						<ol type = "1" start = "1">
+							<li> * Câmpuri obligatorii. </li>
+							<li> ** Câmp completat de staff. </li>
+							<li> Micul dejun este inclus în orice rezervare. </li>
+							<li> Plata se efectuează la check-in. </li>
+							<li> Vizitați site-ul pentru mai multe detalii legate de camere și facilități: <br> <a href = "https://www.grand-hotel.ro" target = "_blank"> www.grand-hotel.ro </a> </li>
+						</ol>
+				</fieldset>
+			</td>
+		</tr>
+		
+	</table>
+	
+	<br>
+	
+	<label for = "numarCerere"> **Numărul cererii: </label>
+	<input type = "text" id = "numarCerere" name = "numarCerere" readonly>
+	
+	<br>
+	
+	<label> Accept ca datele mele să fie prelucrate: </label>
+	<input type = "radio" id = "daPrelucrare" name = "prelucrare" value = "Da" checked disabled>
+	<label for = "daPrelucrare"> Da </label>
+	<input type = "radio" id = "nuPrelucrare" name = "prelucrare" value = "Nu" disabled>
+	<label for = "nuPrelucrare"> Nu </label>
+	
+	<br><br>
+	
+	<input type = "button" onclick = "alert('Cererea de rezervare a fost trimisă!')" value = "Trimite cererea">
+	
+</body>
+
+</html>

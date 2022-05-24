@@ -1,0 +1,47 @@
+:root {
+	--header: 100px;
+	--menu: 25px;
+	--footer: 60px;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	margin: 0;
+}
+
+.header {
+	background-color: red;
+	height: var(--header);
+}
+
+.menu {
+	background-color: yellow;
+	list-style-type: none;
+	height: var(--menu);
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.main-div {
+	background-color: green;
+	margin-bottom: -var(--footer);
+	min-height: calc(100% - var(--header) - var(--menu) - var(--footer));
+}
+
+.footer {
+	background-color: pink;
+	margin-top: auto;
+	height: var(--footer);
+}
+
+.header, .menu, .main-div, .footer {
+	text-align: center;
+}
