@@ -1,0 +1,51 @@
+%{
+#include "lab4.tab.h"
+
+int currentLine = 1;
+
+%}
+
+%option noyywrap
+
+DIGIT 		[0-9] 
+ID 		[a-z][a-z0-9]*
+
+%%
+daca		{ return DACA; }
+atunci		{ return ATUNCI; }
+sfdaca		{ return SFDACA; }
+program		{ return PROGRAM; }
+begin		{ return BGN; }
+var		{ return VAR; }
+type		{ return TYPE; }
+end		{ return END; }
+integer|real	{ return DATA_TYPE; }
+if 		{ return IF; }
+then		{ return THEN; }
+else 		{ return ELSE; }
+readln		{ return READLN; }
+writeln		{ return WRITELN; }
+while		{ return WHILE; }
+do		{ return DO; }
+"(" 		{ return LPR; }
+")" 		{ return RPR; }
+":"		{ return COLON; }
+";" 		{ return SEMICOLON; }
+"," 		{ return COMMA; }
+"."		{ return PERIOD; }
+":="		{ return ASSIGN; }
+"+" 		{ return PLUS; }
+"-"		{ return MINUS; }
+"*" 		{ return MUL; }
+"<" 		{ return LT; }
+">" 		{ return GT; }
+"<>"		{ return NE; }
+{ID}{1,8} 	{ return ID; }
+{DIGIT}+|{DIGIT}"."{DIGIT}{DIGIT}* 	{ return CONST;}
+
+[\n] 		{ currentLine++; }
+
+[ \t\n]+ ;
+
+
+%% 

@@ -1,0 +1,15 @@
+Analiza AF - Nasca Razvan:
+
+StateMachine:
+- descriere: AF-ul e format din mai multe liste de string-uri, cate o lista pentru fiecare element
+	stari: List<String>
+	alfabet: List<String>
+	tranzitii: List<Transition>
+	stareInitiala: String
+	stariFinale: List<String>
+
+Transition: triplet de forma (String(1), String(2), String(3)):
+		- String(1) -> prima stare (starea initiala)
+		- String(2) -> a doua stare (starea finala)
+		- String(3) -> valoarea (din alfabetul de intrare)
+	

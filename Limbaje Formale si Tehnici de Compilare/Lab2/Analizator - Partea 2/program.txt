@@ -1,0 +1,10 @@
+program cerc ;
+var a , p , r , 2a : real ;
+begin
+readln ( r ) ;
+p := 02;
+p := 2 * 3.14 * r ;
+a := 3.14 * r * r ;
+writeln ( p ) ;
+writeln ( a ) ;
+end .

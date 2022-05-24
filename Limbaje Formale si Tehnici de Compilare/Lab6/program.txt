@@ -1,0 +1,10 @@
+program cerc ;
+var a , p , r : integer ;
+begin
+readln ( r ) ;
+p := 2;
+p := 2 * 3 ;
+a := 3 * r ;
+writeln ( p ) ;
+writeln ( a ) ;
+end .
